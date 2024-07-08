@@ -72,6 +72,13 @@ const compare = () => {
     message.textContent = resultMessage;
 };
 
+//reset functionality 
+const resetGame = () =>{
+    playerChoice = null;
+    computerChoice = null;
+    resultMessage = ``;
+}
+document.querySelector(`#restButton`).addEventListener(`click`, resetGame);
 
   
 
